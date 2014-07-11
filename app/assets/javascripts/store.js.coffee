@@ -3,7 +3,7 @@
 
 Bloggr.ApplicationStore = DS.Store.extend({
   revision: 12
-  adapter: "DS.FixtureAdapter"
+  adapter: "DS.RESTAdapter" #"DS.FixtureAdapter"
 
 })
 

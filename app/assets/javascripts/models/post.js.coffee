@@ -6,4 +6,4 @@ Bloggr.Post = DS.Model.extend(
   publishedAt: DS.attr("date")
 )
 
-Bloggr.PostAdapter = DS.FixtureAdapter.extend()
+# Bloggr.PostAdapter = DS.FixtureAdapter.extend()

@@ -82,4 +82,9 @@ Rails.application.configure do
 
   config.ember.variant = :production
 
+  # Enable access to model from rake tasks
+  # http://guides.rubyonrails.org/configuring.html
+  #config.threadsafe! # not set as default for Rails4
+  config.dependency_loading = true if $rails_rake_task
+
 end

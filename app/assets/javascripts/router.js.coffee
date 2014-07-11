@@ -5,3 +5,4 @@ Bloggr.Router.map ()->
   @resource "posts", ->
     @resource "post",
       path: ":post_id"
+    @route "new"

@@ -4,9 +4,13 @@ Bloggr.PostController = Ember.ObjectController.extend(
   actions:
     edit: ->
       @set "isEditing", true
-      return
+
+    delete: ->
+      if (window.confirm("Are you sure you want to delete this post?"))
+        @get('model').destroyRecord()
+        @transitionToRoute('posts')
 
     doneEditing: ->
       @set "isEditing", false
-      return
+      @get("model").save()
 )
